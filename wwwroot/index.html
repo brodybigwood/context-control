@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+  <title>GPT Wrapper</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div id="sidebar-header">
+        <button id="new-chat-btn">New chat</button>
+      </div>
+      <ul id="conversation-list"></ul>
+    </aside>
+    <main id="chat">
+      <div id="chat-header">
+        <button id="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+      </div>
+      <div id="messages"></div>
+      <div id="input-area">
+        <textarea id="message-input" placeholder="Message..." rows="1"></textarea>
+        <button id="send-btn">Send</button>
+      </div>
+    </main>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+  <script src="app.js"></script>
+</body>
+</html>
