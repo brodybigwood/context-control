@@ -22,9 +22,9 @@ A lightweight chat system that integrates GPT-like assistant responses, with con
 
 1. Clone the repo:
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/brodybigwood/context-control.git
    cd context-control
-````
+   ```
 
 2. Set your OpenAI API key:
 
